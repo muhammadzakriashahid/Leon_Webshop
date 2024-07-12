@@ -1,0 +1,351 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Höhe des Header-Bereichs */
+    background: url('imgs/pexels-lkloeppel-466685.jpg') no-repeat center center/cover; /* Hintergrundbild */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Verblasster schwarzer Balken */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.logo-img {
+    width: 250px; /* Größe des Logos anpassen */
+    height: auto;
+    border: 3px solid white; /* Weiße Umrandung */
+    margin-bottom: 10px;
+}
+
+.nav-bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Leicht grauer/weißer Balken */
+    padding: 5px 0; /* Balkenhöhe halbieren */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #000; /* Textfarbe ändern zu schwarz */
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.torn-banner {
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 0 20px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.torn-banner::before,
+.torn-banner::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    background: url('path_to_torn_edge_image.png') repeat-x;
+}
+
+.torn-banner::before {
+    top: -20px;
+}
+
+.torn-banner::after {
+    bottom: -20px;
+}
+
+.torn-text a {
+    color: #d32f2f;
+    text-decoration: none;
+}
+
+.torn-text a:hover {
+    text-decoration: underline;
+}
+
+.shoes-section, .hoodies-section, .Tee-section, .pants-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-shoe, .product-hoodie, .Tee-product, .product-pant{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-shoe img, .product-hoodie img, .Tee-product img, .product-pant img {
+    width: 100%;
+    height: auto;
+}
+
+.product-shoe h3, .product-hoodie h3, .Tee-product h3, .product-pant h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-shoe p, .product-hoodie p, .Tee-product p, .product-pant p {
+    margin: 5px 0;
+}
+
+.product-shoe button, .product-hoodie button, .Tee-product button, .product-pant button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.product-shoe button:hover, .product-hoodie button:hover, .Tee-product button:hover, .product-pant button:hover {
+    background-color: grey;
+}
+
+/* Top Kategorien Styles */
+.top-kategorien {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.top-kategorien h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.kategorien-container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+}
+
+.kategorie-item {
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin: 5px; 
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.kategorie-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.kategorie-item:hover img {
+    transform: scale(1.05);
+}
+
+.kategorie-label {
+    margin-top: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+
+/*newsletter*/
+
+footer {
+    color: black;
+    background-color: #e4e4e4;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.newsletter, .footer-links, .payment-methods {
+    flex: 1;
+    margin: 10px;
+}
+
+.newsletter h2, .newsletter p {
+    margin: 0 0 10px;
+}
+
+#newsletter-form {
+    display: flex;
+}
+
+#newsletter-form input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px 0 0 3px;
+}
+
+#newsletter-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links .follow-us, .footer-links .information {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-links h3 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: black;
+    text-decoration: none;
+}
+
+.payment-methods h3 {
+    margin-bottom: 10px;
+}
+
+.payment-methods ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.payment-methods img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    background-color: #e4e4e4;
+    margin-bottom: 50px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-logo {
+    width: 100px;
+    height: auto;
+    margin: 10px 0;
+    border: 2px solid white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#fixed-cart-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#cart-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.cart-section {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: white;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#fixed-cart-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#fixed-cart-icon::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px; /* Größe des Kreises anpassen */
+    height: 100px; /* Größe des Kreises anpassen */
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cart-icon {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 1; 
+}

@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Höhe des Header-Bereichs */
+    background: url('imgs/pexels-lkloeppel-466685.jpg') no-repeat center center/cover; /* Hintergrundbild */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Verblasster schwarzer Balken */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.logo-img {
+    width: 250px; /* Größe des Logos anpassen */
+    height: auto;
+    border: 3px solid white; /* Weiße Umrandung */
+    margin-bottom: 10px;
+}
+
+.nav-bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Leicht grauer/weißer Balken */
+    padding: 5px 0; /* Balkenhöhe halbieren */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #000; /* Textfarbe ändern zu schwarz */
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.torn-banner {
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 0 20px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.torn-banner::before,
+.torn-banner::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    background: url('path_to_torn_edge_image.png') repeat-x;
+}
+
+.torn-banner::before {
+    top: -20px;
+}
+
+.torn-banner::after {
+    bottom: -20px;
+}
+
+.torn-text a {
+    color: #d32f2f;
+    text-decoration: none;
+}
+
+.torn-text a:hover {
+    text-decoration: underline;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cart-details, .summary {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 45%;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.cart-item h4 {
+    margin: 0;
+}
+
+.summary p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.summary .total {
+    font-weight: bold;
+}
+
+.summary button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
